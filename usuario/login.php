@@ -9,7 +9,7 @@
       <!--<link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">-->
   </head>
   <body>
-      <form>
+      <form method="post" action="control.php">
           <div class="container">
               <div class="profile">
                   <button class="profile__avatar" id="toggleProfile">
@@ -18,12 +18,12 @@
                   <div class="profile__form">
                       <div class="profile__fields">
                           <div class="field">
-                              <input name="usu" type="text" id="fieldUser" class="input" required pattern=.*\S.* />
-                              <label for="fieldUser" class="label">Usuario</label>
+                              <input name="usuario" type="text" id="usuario" class="input" required pattern=.*\S.* />
+                              <label for="usuario" class="label">Usuario</label>
                           </div>
                           <div class="field">
-                              <input name="pass" type="password" id="fieldPassword" class="input" required pattern=.*\S.* />
-                              <label for="fieldPassword" class="label">Contraseña</label>
+                              <input name="password" type="password" id="usuario" class="input" required pattern=.*\S.* />
+                              <label for="password" class="label">Contraseña</label>
                           </div>
                           <div class="profile__footer">
                               <div class="button raised blue">
@@ -32,7 +32,7 @@
                           </div>
                           <div class="profile__footer">
                               <div class="button raised blue">
-                                  <button name="registrarse" type="submit" class="center btn-login">REGISTRARSE</button>
+                                  <a href="#" class="center btn-login">REGISTRARSE</a>
                               </div>
                           </div>
                       </div>
